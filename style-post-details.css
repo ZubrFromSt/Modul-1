@@ -1,0 +1,72 @@
+/* Стилизація проєкта -
+post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.
+Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд) */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+body {
+    display: flex;
+    background-color: rgb(143, 153, 159);
+    justify-content: space-around;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.info_user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1%;
+}
+
+li {
+    list-style: none;
+}
+
+.posts__list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.posts__list > li {
+    flex: 1 1 24%;
+    max-width: 24%;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    padding: 10px 15px;
+    border-radius: 5px;
+    
+}
+
+
+
+.comments__list { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comments__list > li {
+    margin: 0.7%;
+    flex: 1 1 10%;
+    max-width: 21%;
+    min-width: 20.1%;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    padding: 10px 15px;
+    border-radius: 5px;   
+}
