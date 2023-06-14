@@ -7,7 +7,7 @@
 
 const userId = new URL(location.href).searchParams.get('userId');
 
-fetch(`http://jsonplaceholder.typicode.com/users/${userId}`)
+fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
     .then((res) => res.json())
     .then((user) => {
         console.log(user)

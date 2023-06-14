@@ -4,7 +4,7 @@
 // 3 Додати кожному блоку кнопку/посилання , при кліку на яку відбувається перехід  на сторінку user-details.html,
 //котра має детальну інфорацію про об'єкт на який клікнули
 
-fetch('http://jsonplaceholder.typicode.com/users')
+fetch('https://jsonplaceholder.typicode.com/users')
     .then((res) => res.json())
     .then((users) => {
         const container = document.getElementsByClassName('container')[0];
